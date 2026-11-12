@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tutor-contrib-backup"
-dynamic = ["version"]
+version = "4.6.0.post1"
 description = "Backup plugin for Tutor"
 readme = "README.md"
 license = {text = "AGPLv3"}
@@ -34,8 +34,6 @@ packages = ["tutorbackup", "tutorbackup.patches", "tutorbackup.templates"]
 
 [project.entry-points."tutor.plugin.v1"]
 backup = "tutorbackup.plugin"
-
-[tool.setuptools_scm]
 
 [tool.bumpversion]
 commit = true
